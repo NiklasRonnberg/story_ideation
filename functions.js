@@ -162,6 +162,15 @@ function generateWords() {
     const startBtn = document.getElementById("startBtn");
     startBtn.disabled = false;
 
+    timeLeft = 180;
+    clearInterval(timerInterval);        
+    timerInterval = null;
+    const btn = document.getElementById("startBtn");
+    btn.classList.remove("pressed");
+
+    const timer = document.getElementById("timer");
+    timer.innerText = "03:00";
+
     startSession();
 
     columns = [
