@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Story Slot Machine</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer></script>
+</head>
+
+<body>
+
+<!-- NEW HEADER -->
+<div class="title-block">
+    <h1>1 - 3 - 1</h1>
+
+    <p><span class="neon">1 minute</span> — Press Spin to generate three words, and write them down. </p>
+    <p><span class="neon">3 minutes</span> — Make up with a story based on these words, make it simple.</p>
+    <p><span class="neon">1 minute</span> — Each team presents their story for the rest of the class.</p>
+</div>
+
+<div class="machine">
+    <div class="slot-container">
+        <canvas id="canvas" width="600" height="150"></canvas>
+    </div>
+
+    <button onclick="generateWords()">SPIN</button>
+</div>
+
+<div class="timer-row">
+
+    <div id="timer">03:00</div>
+
+    <button id="startBtn" onclick="startTimer()" disabled>START</button>
+
+</div>
+
+</body>
+</html>
