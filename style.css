@@ -230,8 +230,11 @@ button:active {
     cursor: not-allowed;
 }
 
+/* =========================
+   RESPONSIVE
+========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     body {
         gap: 2vh;
