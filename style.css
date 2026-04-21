@@ -229,3 +229,60 @@ button:active {
 
     cursor: not-allowed;
 }
+
+
+@media (max-width: 768px) {
+
+    body {
+        gap: 2vh;
+        font-size: 2.2vh;
+    }
+
+    .title-block h1 {
+        font-size: 8vw;
+        white-space: normal;
+    }
+
+    .title-block p {
+        white-space: normal;
+        font-size: 2vh;
+    }
+
+    .machine {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    canvas {
+        width: 92vw;
+        height: 28vh;
+    }
+
+    /* spin button becomes horizontal (critical fix) */
+    button {
+        width: 60vw;
+        height: 7vh;
+        writing-mode: horizontal-tb;
+        font-size: 2.5vh;
+    }
+
+    #startBtn {
+        width: 70vw;
+        height: 6.5vh;
+    }
+
+    .timer-row {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    #timer {
+        font-size: 10vw;
+        min-width: auto;
+    }
+
+    .slot-container {
+        padding: 3vw;
+        border-radius: 3vw;
+    }
+}
